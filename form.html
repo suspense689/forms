@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+  <title>Формы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+  <div>
+    <form action="http://ya.ru/" method="get" target="_blank">
+  <label for="login">Ваш логин:</label>
+    </br>
+    <input required type="text" name="login" placeholder="Твой логин"> </br>
+    <label for="login">Ваш пароль:</label>
+  </br>
+    <input required type="password" name="pass" placeholder="Твой пароль"></br>
+  <label for="yes">Да</label>  
+  <input required type="checkbox" name="yes" checked id="yes"> 
+  </br> 
+ <label for="popup">Открыть попап</label> 
+ <input  type="checkbox" name="popup" id="popup">
+<div class="popup">
+  <div class="text">
+    <h1>ПРИВЕТ МИР, Я ПОПАП</h1>
+    <p>Хахаха, я тебя обманул!</p>
+  <label for="popup">Закрыть попап</label>  
+  </div>
+  </div>
+
+</br>
+<label for="itmo">Ваш университет:</label> 
+  <input  type="radio" name="univer" checked id="male" value='1' checked>
+  </br>
+  <label for="itmo">Не университет:</label> 
+  <input  type="radio" name="univer" value='0' disabled id="female">
+</br>
+<input  type="hidden" name="action" value="getPageNumber">
+<select name="месяц" multiple>
+  <option value="1">январь</option>
+   <option value="2">февраль</option>
+  <option value="3">март</option>
+  <option value="4">апрель</option>
+  <option value="5">май</option>
+  <option value="6">июнь</option>
+  <option value="7">июль</option>
+  <option value="8">август</option>
+  <option value="9">сентябрь</option>
+  <option value="10">октябрь</option>
+  <option value="11">ноябрь</option>
+  <option value="12">декабрь</option>
+  </select>
+</br>
+<label for ="email">Ваша почта: </label>
+</br>
+<input required type="email" name="email" id="email" placeholder="Твой логин">
+</br>
+<button>Отправить</button>
+</form>
+</div>
+</body>
